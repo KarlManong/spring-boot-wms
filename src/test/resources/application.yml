@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: wms
+  datasource:
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+server:
+  context-path: /wms

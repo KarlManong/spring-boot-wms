@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: wms
+  datasource:
+    url: jdbc:h2:~/testdb;DATABASE_TO_UPPER=FALSE
+    tomcat:
+      max-active: 10
+      test-on-borrow: true
+      validation-query: select 1
+      validationQueryTimeout: 30
+      remove-abandoned: true
+      remove-abandoned-timeout: 3600
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+server:
+  context-path: /wms
